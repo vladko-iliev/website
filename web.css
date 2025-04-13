@@ -1,0 +1,265 @@
+div , ul , li , p , footer, header  {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+  
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #333333;
+    background-color: #FFFFFF;
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar {
+    background-color: #989DA6;
+    border: 1px solid #f7f3f3;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center; 
+    margin: 0 auto; 
+    width: 100%; 
+    flex-direction: column;
+}
+
+#menu {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #989DA6;
+    border-radius: 8px;
+    border: 1px #989DA6;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+a:hover, a:active {
+    background-color: red;
+  }
+
+h1 {
+    text-align: center;
+    font-size: 30px ;
+    font-style: italic;
+    color:rgb(240, 179, 105);
+}
+
+footer {
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;    
+    right: 0;   
+    width: 100%; 
+    padding: 10px; 
+    text-align: center;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 8px;
+    color: rgb(10, 10, 10); 
+}
+
+h2 ,p{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    font-size: 16px;
+    background-color:#313C4E ;
+    color: whitesmoke;
+    padding: 10px;
+    border: 1px solid rgb(155, 149, 149);
+
+   
+}
+
+img {
+    max-width: 25%;
+    height: auto;
+    border-radius: 25px;
+   
+}
+
+
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: normal;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    text-align: right;
+   
+}
+.columm{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-start;
+    padding: 1px;
+    margin: 2px;
+    background-color: #313C4E;
+    gap: 2px;
+}
+
+.columnleft {
+    flex: 0 1 60%; 
+    text-align: left;
+    text-decoration: none;
+}
+
+h1, h2 {
+    color: #FFFFFF;
+    font-size: 15px;
+    background-color: #989DA6;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    gap: 40px;
+    padding: 20px; 
+    text-decoration: none;
+}
+  .columnright {
+    flex: 0 1 35%; 
+    text-align: left;
+    text-decoration: none;
+  }  
+  ul {
+    list-style-type: none;
+}
+.icon-container {
+    display: flex;
+    align-items: center;   
+    gap: 10px;             
+    margin-bottom: 15px;   
+  }
+  
+  .material-icons  {
+    font-size: 24px;
+    color: #131212;       
+  }
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+
+  @media (max-width: 600px) {
+    
+    .hamburger {
+      display: block;
+      align-self: flex-end;
+    }
+  
+    #menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #989DA6;
+      z-index: 1;
+    }
+  
+    #menu.active {
+      display: flex;
+    }
+  
+   
+    .section {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+  
+    img {
+      max-width: 90%;
+      margin: 10px 0;
+    }
+  
+    .section1 {
+      flex-direction: column;
+      gap: 20px;
+      padding: 10px;
+    }
+  
+    .columnleft, .columnright {
+      flex: 1 1 100%;
+    }
+  
+    
+    footer {
+      position: relative;
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    
+    h1 {
+      font-size: 20px;
+    }
+  
+    h2, p {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 412px) {
+    body {
+      font-size: 16px;
+    }
+  
+    .hamburger {
+      padding: 8px;
+    }
+  
+    #menu {
+      top: 50px;
+    }
+  
+    .icon-container {
+      gap: 5px;
+    }
+  }
