@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebResume</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+<body>
+    <div class="navbar">
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul id="menu">
+          <li><a href="web.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+        </ul>
+      </div>
+    <section>
+        <div class="section">
+           <img src="image/PBS_0271.jpg " alt="PBS_0271" >
+        
+            <article>
+            <p> Vladimir Iliev</p> 
+            <p>QA manual testing</p>
+            <p>Html&Css</p>
+        </article>
+    <div class="columm">
+
+        
+        <i class="material-icons">mail</i>
+        <p>vladko921@gmail.com</p>
+        <a href="https://www.linkedin.com/in/vladimir-iliev-4829b5276" target="_blank">www.linkedin.com/in/vladimir-iliev-4829b5276</a>
+        <i class="material-icons">phone</i>
+        <p>+359899587400</p>
+        <i class="material-icons">location_city</i>
+        <p>st.Radi Ivanov 8, Ruse, Bulgaria</p>
+    </div>
+           
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 WebResume.
+            All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
